@@ -1,0 +1,26 @@
+@import "../../bower_components/susy/sass/_susy";
+$susy: (
+  /* Tells Susy to use 12 columns */
+  columns: 12,
+  /* Tells Susy that the container has a max-width of 1120px */
+  container: 1120px,
+  /* Tells Susy to use border-box */
+  global-box-sizing: border-box 
+  );
+
+/* Makes border-box properties */
+@include border-box-sizing;
+
+.wrap {
+  @include container;
+}
+
+/* Tells Susy there's 8 columns in the content */
+.content {
+  @include span(8); 
+}
+
+/* Tells Susy there's 4 columns in the sidebar, and its the last item on the row. */
+.sidebar {
+  @include span(4 last); 
+}
