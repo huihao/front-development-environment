@@ -4,14 +4,28 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var imagemin = require('gulp-imagemin');
 var del = require('del');
-var browserify = require('browserify');
-var source = require('vinyl-source-stream');
  
- var paths = {
-  sass: ['source/sass/**/*'],
-  images: 'source/img/**/*'
-};
-
+var paths = {
+            root: './',
+            build: {
+                root: 'build/',
+                styles: 'build/css/',
+                scripts: 'build/js/',
+                images:'build/img/'
+            },
+            dist: {
+                root: 'dist/',
+                styles: 'dist/css/',
+                scripts: 'dist/js/',
+                images:'dist/img/'
+            },
+            source: {
+                root: 'src/',
+                styles: 'src/sass/',
+                scripts: 'src/js/*.js',
+                images:'src/img/**/*'
+            },
+        }
 
 gulp.task('clean', function(cb) {
 
@@ -19,7 +33,7 @@ gulp.task('clean', function(cb) {
 });
 
 gulp.task('sass', ['clean'] ,function() {
-    return sass('source/sass') 
+    return sass(paths.source.styles) 
     .on('error', function (err) {
       console.error('Error!', err.message);
    })
@@ -27,34 +41,18 @@ gulp.task('sass', ['clean'] ,function() {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-    .pipe(gulp.dest('result/css'));
+    .pipe(gulp.dest(paths.build.styles));
 });
 
 gulp.task('images', ['clean'], function() {
-  return gulp.src(paths.images)
+  return gulp.src(paths.source.images)
     .pipe(imagemin({optimizationLevel: 5}))
     .on('error', function (err) {
       console.error('Error!', err.message);
    })
-    .pipe(gulp.dest('result/img'));
-});
-
-gulp.task('browserify', function() {
-    return browserify('./source/js/app.js')
-        .bundle()
-
-        .on('error', function (err) {
-      		console.error('Error!', err.message);
-   		})
-        
-        .pipe(source('bundle.js'))
-
-        .on('error', function (err) {
-      		console.error('Error!', err.message);
-   		})
-        
-        .pipe(gulp.dest('./result/js'));
+    .pipe(gulp.dest(paths.build.images));
 });
 
 
-gulp.task('default', ['images','sass','browserify']);
+
+gulp.task('default', ['images','sass']);
