@@ -6,6 +6,7 @@ var imagemin = require('gulp-imagemin');
 var del = require('del');
 var connect = require('gulp-connect');
 var jshint = require('gulp-jshint');
+var compass = require('gulp-compass');
 
 var paths = {
             root: './',
@@ -13,7 +14,8 @@ var paths = {
                 root: 'build/',
                 styles: 'build/css/',
                 scripts: 'build/js/',
-                images:'build/img/'
+                images:'build/img/',
+                sass:'build/sass'
             },
             dist: {
                 root: 'dist/',
@@ -22,7 +24,7 @@ var paths = {
                 images:'dist/img/'
             },
             source: {
-                root: 'src/',
+                root: 'src/*.html',
                 styles: 'src/sass/',
                 scripts: 'src/js/*.js',
                 images:'src/img/**/*'
@@ -31,7 +33,6 @@ var paths = {
 
 gulp.task('clean', function(cb) {
 
-  del(['build'], cb);
 });
 
 gulp.task('connect', function () {
@@ -42,16 +43,28 @@ gulp.task('connect', function () {
     });
 });
 
-gulp.task('sass', ['clean'] ,function() {
-    return sass(paths.source.styles) 
-    .on('error', function (err) {
-      console.error('Error!', err.message);
-   })
-    .pipe(autoprefixer({
+gulp.task('html', function () {
+    return gulp.src(paths.source.root)
+        .pipe(gulp.dest(paths.build.root))
+        .pipe(connect.reload());
+});
+
+gulp.task('compass', function() {
+  gulp.src("src/sass/**/*")
+    .pipe(compass({
+      css: paths.build.styles,
+      sass: paths.source.sass,
+      import_path:'./bower_components',
+      require: ['susy']
+    }))
+     .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
-    .pipe(gulp.dest(paths.build.styles))
+    .pipe(gulp.dest(paths.build.root))
+    .on('error', function(error) {
+      console.log(error);
+    })
     .pipe(connect.reload());
 });
 
@@ -62,6 +75,7 @@ gulp.task('script', function () {
         .pipe(gulp.dest(paths.build.scripts))
         .pipe(connect.reload());
 });
+
 
 gulp.task('images', ['clean'], function() {
   return gulp.src(paths.source.images)
@@ -74,11 +88,11 @@ gulp.task('images', ['clean'], function() {
 });
 
 gulp.task('watch', function () {
-    gulp.watch("src/sass/**/*", ['sass']);
+    gulp.watch("src/sass/**/*", ['compass']);
     gulp.watch(paths.source.images, ['images']);
     gulp.watch(paths.source.scripts, ['script']);
-    gulp.watch('build/*.html', ['html']);
+    gulp.watch(paths.source.root, ['html']);
 });
 
 
-gulp.task('default', ['connect', 'images', 'sass', 'watch', "script"]);
+gulp.task('default', ['connect', 'images', 'compass', 'watch', "script","html"]);
