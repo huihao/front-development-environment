@@ -22,10 +22,8 @@
     "tests"
   ],
   "dependencies": {
-    "susy": "~2.2.2",
-    "normalize.css": "~3.0.3"
-  },
-  "devDependencies": {
-    "breakpoint-sass": "~2.5.0"
+    "susy": "~2.2.5",
+    "normalize.css": "~3.0.3",
+    "breakpoint-sass": "~2.4.0"
   }
 }

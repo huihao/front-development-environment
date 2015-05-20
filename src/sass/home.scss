@@ -1,4 +1,18 @@
-.container{
-	width: 1002px;
-	margin:0 auto;
+@import "compass";
+@import "breakpoint";
+@import "susy";
+$basic: 556px;
+$pair: 456px 794px;
+
+
+#foo {
+  content: 'No Media Queries';
+
+  @include breakpoint($basic) {
+    content: 'Basic Media Query';
+  }
+
+  @include breakpoint($pair) {
+    content: 'Paired Media Query';
+  }
 }

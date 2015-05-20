@@ -14,8 +14,7 @@ var paths = {
                 root: 'build/',
                 styles: 'build/css/',
                 scripts: 'build/js/',
-                images:'build/img/',
-                sass:'build/sass'
+                images:'build/img/'
             },
             dist: {
                 root: 'dist/',
@@ -38,7 +37,7 @@ gulp.task('clean', function(cb) {
 gulp.task('connect', function () {
     connect.server({
         root: '',
-        port:'5050',
+        port:'5060',
         livereload: true
     });
 });
@@ -50,18 +49,23 @@ gulp.task('html', function () {
 });
 
 gulp.task('compass', function() {
-  gulp.src("src/sass/**/*")
+  gulp.src("src/sass/**/*.scss")
     .pipe(compass({
       css: paths.build.styles,
-      sass: paths.source.sass,
-      import_path:'./bower_components',
-      require: ['susy']
+      sass: paths.source.styles,
+      project:__dirname,
+      import_path:['bower_components/breakpoint-sass/stylesheets/','bower_components/susy/sass'],
+      requre:['breakpoint','susy'],
+      sourcemap: true
     }))
+    .on('error', function(error) {
+      console.log(error);
+    })
      .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
-    .pipe(gulp.dest(paths.build.root))
+    .pipe(gulp.dest(paths.build.styles))
     .on('error', function(error) {
       console.log(error);
     })

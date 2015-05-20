@@ -1,0 +1,13 @@
+#foo {
+  content: 'No Media Queries';
+}
+@media (min-width: 556px) {
+  #foo {
+    content: 'Basic Media Query';
+  }
+}
+@media (min-width: 456px) and (max-width: 794px) {
+  #foo {
+    content: 'Paired Media Query';
+  }
+}
