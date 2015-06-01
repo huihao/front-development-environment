@@ -29,7 +29,7 @@ var paths = {
                 images:'src/img/**/*'
             },
         }
-
+        
 gulp.task('clean', function(cb) {
 
 });
@@ -62,7 +62,7 @@ gulp.task('compass', function() {
       console.log(error);
     })
      .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
+            browsers: ['last 2 versions','Firefox >= 20'],
             cascade: false
         }))
     .pipe(gulp.dest(paths.build.styles))

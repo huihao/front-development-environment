@@ -1,13 +1,11 @@
-#foo {
-  content: 'No Media Queries';
-}
-@media (min-width: 556px) {
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
   #foo {
-    content: 'Basic Media Query';
+    content: 'Device Pixel Ratio of at least 1.5';
+    width: 100px;
   }
 }
-@media (min-width: 456px) and (max-width: 794px) {
+@media (-webkit-max-device-pixel-ratio: 1.4895833333333333), (max-resolution: 143dpi), (-webkit-max-device-pixel-ratio: 1.48958) {
   #foo {
-    content: 'Paired Media Query';
+    content: "Cross Browser Resolution Query";
   }
 }

@@ -1,18 +1,15 @@
 @import "compass";
 @import "breakpoint";
-@import "susy";
-$basic: 556px;
-$pair: 456px 794px;
-
+$hidpi: min-resolution 1.5dppx;
+$cross-reso: max-resolution 143dpi;
 
 #foo {
-  content: 'No Media Queries';
-
-  @include breakpoint($basic) {
-    content: 'Basic Media Query';
+  @include breakpoint($hidpi) {
+    content: 'Device Pixel Ratio of at least 1.5';
+    width: 100px;
   }
 
-  @include breakpoint($pair) {
-    content: 'Paired Media Query';
+  @include breakpoint($cross-reso) {
+    content: 'Cross Browser Resolution Query'
   }
 }
