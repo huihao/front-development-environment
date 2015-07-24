@@ -1,0 +1,11 @@
+.w-block{
+	width: 100px;
+	height: 100px;
+	background-color: #FFF;
+	margin:10px;
+	float: left;
+	&:after{
+		clear: both;
+		content: "";
+	}
+}

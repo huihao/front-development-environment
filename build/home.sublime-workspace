@@ -1,0 +1,467 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"d",
+				"display"
+			],
+			[
+				"c",
+				"class	Attr"
+			],
+			[
+				"type",
+				"typename"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"chec",
+				"checked"
+			],
+			[
+				"che",
+				"checkbox"
+			],
+			[
+				"ch",
+				"checkbox"
+			],
+			[
+				"reg",
+				"RegExp"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"link",
+				"link-a"
+			],
+			[
+				"par",
+				"part-b"
+			],
+			[
+				"h",
+				"height"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"last_filter": "Package Control: insta",
+		"selected_items":
+		[
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 147.0,
+		"history":
+		[
+			"import  urllib.request,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler()));open(os.path.join(ipp,pf),'wb').write(urllib.request.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/template/io.txt",
+		"/E/whh/24 - 副本/详情页.html",
+		"/E/front/ygzfept/package.json",
+		"/E/front/ygzfept/src/css/index.css",
+		"/E/front/ygzfept/src/css/common.css",
+		"/E/front/ygzfept/src/index.html",
+		"/E/whh/blog/src/home.html",
+		"/E/front/ygzfept/gulpfile.js",
+		"/E/front/wzwc/build/xxgk_content.html",
+		"/E/front/wzwc/build/xxgk.html",
+		"/E/front/lcmb/鹿城区直单位/鹿城区直单位/index.html",
+		"/E/front/lcmb/鹿城网站普查/鹿城网站普查/index.html",
+		"//SERVER/oulong/jspceo/save.jsp",
+		"//SERVER/oulong/2car/car_sale.jsp",
+		"//SERVER/oulong/jspceo/escxx_in.jsp",
+		"//SERVER/oulong/2car/img/css.css",
+		"//SERVER/oulong/2car/index.jsp",
+		"//SERVER/oulong/2car/js/carservice.js",
+		"//SERVER/oulong/2car/car_want.jsp",
+		"//SERVER/oulong/jspceo/upload.jsp",
+		"//SERVER/oulong/jspceo/js/upload.js",
+		"//SERVER/oulong/2car/banner.jsp",
+		"/E/whh/33/view/list.html",
+		"//SERVER/oulong/jspceo/car_pic_add.jsp",
+		"//SERVER/oulong/jspceo/esccs_in.jsp",
+		"//SERVER/oulong/jspceo/js/escxx_in.js",
+		"//SERVER/oulong/2car/contact.jsp",
+		"//SERVER/oulong/2car/view_car.jsp",
+		"/E/front/wzwc/build/list.html",
+		"/E/front/wzwc/build/view.html",
+		"/E/whh/前端工具/webuploader-master/webuploader-master/examples/image-upload/index.html",
+		"/E/front/wzwc/gulpfile.js",
+		"/E/front/ohsqgzw/ohsqw/src/sass/_base.scss",
+		"/E/whh/26_b/bak/old_home.html",
+		"/E/front/ohsqgzw/ofb/package.json",
+		"/E/front/ohsqgzw/ofb/gulpfile.js",
+		"/E/whh/ohaxsjyh/src/sass/home.scss",
+		"/E/front/ohsqgzw/ohsgw/src/sass/_base.scss",
+		"/E/whh/33/view/view.html",
+		"/E/whh/34/view/ohsgw.html",
+		"/E/whh/34/src/sass/ohsgw.scss",
+		"/E/front/wzwc/build/js/side.js",
+		"/E/whh/26_b/templates/img/side.css",
+		"/E/front/ohsqgzw/ohshzzw/build/index.html",
+		"/E/whh/24 - 副本/mb_zjlc.html",
+		"/E/front/wzwc/src/js/common.js",
+		"/E/front/ohsqgzw/ohsgw/build/catalog.html",
+		"/E/front/ohsqgzw/ohshzzw/src/sass/list-style.scss",
+		"/E/front/ohsqgzw/ohaxsjyh/package.json",
+		"/E/front/ohsqgzw/ohaxsjyh/gulpfile.js",
+		"/E/front/ohgs/templates/images/home.css",
+		"/E/front/ohsqgzw/ohshzzw/build/catalog.html",
+		"/E/front/ohsqgzw/ohshzzw/build/view.html",
+		"/E/front/ohsqgzw/ohshzzw/src/sass/view.scss",
+		"/E/front/ohgs/gulpfile.js",
+		"/E/whh/26_b/index.html",
+		"/E/whh/26_b/bak/old_home_2.css",
+		"/E/front/ohsqgzw/ohsgw/src/sass/list.scss",
+		"/E/front/ohsqgzw/ohshzzw/package.json",
+		"/E/front/ohsqgzw/ohshzzw/src/sass/catalog.scss",
+		"/E/front/ohsqgzw/ohshzzw/src/js/list.js",
+		"/E/front/ohsqgzw/ohsqw/build/js/list.js",
+		"/E/front/ohsqgzw/ohshzzw/build/list.html",
+		"/E/front/ohsqgzw/ohsgw/src/sass/list-style.scss",
+		"/E/front/ohsqgzw/ohsgw/src/sass/_list-main.scss",
+		"/E/front/ohsqgzw/ohsgw/src/js/side.js",
+		"/E/whh/rcms/wczt/cszt/templates/cszt_index.html",
+		"/E/whh/rcms/wczt/wmxc/package.json",
+		"/E/idea/workplace/lab/.gitignore",
+		"/D/m2/settings.xml",
+		"/E/openSource/spring-framework/import-into-idea.md",
+		"/E/openSource/spring-framework/gradle.properties",
+		"/E/whh/java/Trial/generate/src/main/webapp/WEB-INF/views/admin/menu.ftl",
+		"/E/whh/java/Trial/generate/src/main/webapp/WEB-INF/views/js/menu.js",
+		"/E/front/wzwc/src/sass/_list-style.scss",
+		"/E/front/wzwc/build/list-img.html",
+		"/E/whh/34/view/view.html",
+		"/E/front/wzwc/package.json",
+		"/E/front/ohsqgzw/ohsgw/package.json",
+		"/E/front/ohsqgzw/ohsgw/gulpfile.js",
+		"/E/whh/34/view/list.html",
+		"/E/front/wzwc/src/sass/view.scss",
+		"/E/front/wzwc/src/sass/_base.scss",
+		"/E/front/wzwc/src/sass/list.scss",
+		"/E/whh/前端工具/webuploader-master/webuploader-master/examples/image-upload/upload.js",
+		"/E/template/column/views/js/admin/column/list.js",
+		"//server/jpkc_ojzhyd/css/home.css",
+		"/E/whh/26_b/view/css/side.css",
+		"//SERVER/ohgmw/index.jsp",
+		"/E/front/wzwc/src/sass/_color.scss",
+		"/E/front/wzwc/src/sass/_search.scss",
+		"/E/front/wzwc/templates/img/list.css",
+		"/E/front/wzwc/build/search.html",
+		"//SERVER/ohgmw/zInc_head.jsp",
+		"//SERVER/oulong/img/css.css",
+		"/E/template/column/views/admin/column/detail.ftl",
+		"/E/whh/html5/HTML5_Canvas_animation_src/Animation/animate.html",
+		"/E/whh/ol/pp.json",
+		"/E/template/views/list.ftl",
+		"/E/template/views/detail.ftl",
+		"/E/template/views/js/list.js",
+		"/E/views/html/hello.class",
+		"/E/views/html/Question.class",
+		"/E/template/question/impl/repository/QuestionRepositoryImpl.java",
+		"/E/template/question/entity/QuestionEntity.java",
+		"/C/Users/Administrator/Desktop/jpkc/jsp_pp_c.sql",
+		"//SERVER/oulong/jspceo/saveUpload.jsp",
+		"/E/front/lcfl/templates/img/common.css",
+		"/C/Users/Administrator/Desktop/jpkc/jsp_usedcar.sql",
+		"/C/Users/Administrator/Desktop/wc.txt",
+		"/E/whh/ol/pp",
+		"/E/whh/springmvc源代码/sqlprofiler-0.3-bin/spy.properties",
+		"//SERVER/oulong/2car/css/view_car.css",
+		"//SERVER/oulong/2car/css",
+		"//server/oulong/JC_Data/JC_Files/f/z0i9xsbglf/JC_Data.xml",
+		"//SERVER/oulong/jspceo/css/upload.css",
+		"//SERVER/oulong/jspceo/images",
+		"/E/whh/ol/src/src/main/webapp/index.jsp",
+		"/E/whh/blog/gulpfile.js",
+		"/E/front/wzwc/templates/img/common.css",
+		"/E/front/lcfl/gulpfile.js",
+		"//server/wzgxhzs/search.jsp",
+		"/E/front/wzwc/templates/img/home.css",
+		"/E/whh/blog/bower.json",
+		"/E/front/lcfl/build/css/home.css",
+		"//server/ohgmw/vip_reg.jsp",
+		"//SERVER/oulong/jspceo/reserve_in.jsp",
+		"/E/front/wzwc/templates/UI_flexpaper_desktop_flat.js"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"util",
+			"img",
+			"contentById",
+			"content_single",
+			"\"cl\"",
+			"cl",
+			"script",
+			"zoomLevelMin",
+			"z0hyqjf589",
+			"z0hpq79mu5",
+			"z0hpq7coyk",
+			"}\n",
+			"jsp_pp",
+			"z0i6poqitj",
+			"\"L\"",
+			"\"N\"",
+			"\"I\"",
+			"List",
+			"</option>",
+			"&nbsp;",
+			"dds",
+			"相册",
+			"照片",
+			"wencheng/WSG/rcms_resources",
+			"wencheng/wsg",
+			"wencheng",
+			"wencehng",
+			"WSG",
+			"${resourcePath}/",
+			"images/",
+			"/>\n",
+			"images",
+			"在线测试",
+			"href=\"/form",
+			"full_",
+			"form",
+			"\"img/",
+			"form",
+			"./依申请公开--书面申请方式2_files",
+			"<a href=\".*?\"",
+			"href=\".*\"",
+			"./依申请公开--书面申请方式_files/",
+			".js",
+			"./政府依申请公开--网上申请2_files",
+			"./政府依申请公开--网上申请_files",
+			"move",
+			"<img src=\"",
+			"../img/",
+			"contentPath",
+			"../img"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "home.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"zinc_head",
+				"ohgmw\\zInc_head.jsp"
+			],
+			[
+				"vip_mrg_images",
+				"ohgmw\\vip_mrg_images.jsp"
+			],
+			[
+				"vip_mrg_left.jsp",
+				"ohgmw\\vip_mrg_left.jsp"
+			],
+			[
+				"vip_mrg_view",
+				"ohgmw\\vip_mrg_view.jsp"
+			],
+			[
+				"zfld",
+				"24\\zfld.html"
+			],
+			[
+				"vip_mrg_msg_view",
+				"ohgmw\\vip_mrg_msg_view.jsp"
+			],
+			[
+				"vip_mrg_msg.jsp",
+				"ohgmw\\vip_mrg_msg.jsp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 319.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,6 +1,10 @@
+html,body{
+	height: 100%;
+	width: 100%;
+}
 #container {
 	width: 100%;
-	min-width: 1002px;
+	height: 100%;
 }
 #header{
 	width: 100%;
@@ -9,20 +13,4 @@
 	.logo{
 		
 	}
-}
-#nav{
-	height: 50px;
-	width: 100%;
-	background-color: #66eadc;
-}
-#content{
-	width: 1002px;
-	margin: 0 auto;
-	height: 600px;
-	background-color: #cbcbe1;
-}
-#footer{
-	height: 80px;
-	width: 100%;
-	background-color: #e4008e;
 }

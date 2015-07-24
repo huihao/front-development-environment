@@ -1,15 +1,17 @@
 @import "compass";
 @import "breakpoint";
-$hidpi: min-resolution 1.5dppx;
-$cross-reso: max-resolution 143dpi;
+@import "_block";
 
-#foo {
-  @include breakpoint($hidpi) {
-    content: 'Device Pixel Ratio of at least 1.5';
-    width: 100px;
-  }
 
-  @include breakpoint($cross-reso) {
-    content: 'Cross Browser Resolution Query'
-  }
+.desktop{
+	width: 100%;
+	height: 100%;
+	background-color:#000;
+	&:after{
+		content: "";
+		clear: both;
+	}
+	&:before{
+		clear: both;
+	}
 }
