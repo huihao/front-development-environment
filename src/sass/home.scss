@@ -1,17 +1,32 @@
 @import "compass";
 @import "breakpoint";
-@import "_block";
+@import "susy";
+.content{
+  .sidebar{
+    width: 20%;
+    float: left;
+    ul{
+      list-style: none;
+      li{
+        a{
+          color: #64B5F6;
+          &:hover{
+            color: #90CAF9;
+          }
+        }
+      }
+    }
+  }
+  .main{
+    width: 70%;
+    float: left;
+  }
+}
 
-
-.desktop{
-	width: 100%;
-	height: 100%;
-	background-color:#000;
-	&:after{
-		content: "";
-		clear: both;
-	}
-	&:before{
-		clear: both;
-	}
+.article{
+  padding: 10px;
+  margin-bottom: 15px;
+  .article-verview{
+    text-indent: 2em;
+  }
 }

@@ -1,16 +1,113 @@
-html,body{
-	height: 100%;
-	width: 100%;
+@import "_normalize";
+@import "breakpoint";
+#container{
+  width:100%;
+  min-width: 1002px;
 }
-#container {
-	width: 100%;
-	height: 100%;
+.content{
+  width: 1002px;
+  margin: 0 auto;
+  -webkit-perspective: 500px;
+  -webkit-perspective-origin: 0 0;
+  .sidebar {
+    width: 20%;
+    float: left;
+    ul {
+     list-style: none;
+     padding: 0;
+     li{
+       height: 30px;
+       line-height: 30px;
+       a {
+         color: #64B5F6;
+         transition: padding 0.5s;
+         &:hover {
+           color: #90CAF9;
+           padding-left: 10px;
+         }
+       }
+     }
+   }
+  }
+  .main{
+    width: 70%;
+    float: left;
+    .pagination {
+      text-align: center;
+      height: 30px;
+      line-height: 30px;
+      font-size: 1rem;
+      color: #9E9E9E;
+      width: 100%;
+      a{
+        color: #9E9E9E;
+        &:hover{
+          color: #64B5F6;
+        }
+      }
+      .newer-posts {
+        float: left;
+      }
+      .older-posts {
+        float: right;
+      }
+    }
+  }
 }
-#header{
-	width: 100%;
-	height: 50px;
-	background-color: #115ca7;
-	.logo{
-		
-	}
+.main-header{
+  width: 100%;
+  height: 80px;
+  border-bottom: 3px solid #01579B;
+  background-color: #03A9F4;
+  .con{
+    padding-top: 1px;
+    width: 1002px;
+    margin: 0 auto;
+    color: #fff;
+    position: relative;
+    .logo{
+      display: block;
+      font-size: 25px;
+      margin-top: 5px;
+      color: #fff;
+      @include breakpoint(max-width 375px) {
+         margin: 0 auto;
+         text-align: center;
+         color: red;
+      }
+    }
+    .info{
+      margin-top: 10px;
+    }
+  }
+}
+@include breakpoint(max-width 375px) {
+  .content{
+    width: 100%;
+  }
+  #container{
+    min-width: 100%;
+  }
+  .main-header{
+    .con{
+      width: 100%;
+    }
+  }
+}
+
+.article {
+  padding: 10px;
+  margin-bottom: 15px;
+  a{
+    transition: color 0.5s;
+  &:hover{
+    color: #2196F3;
+  }
+  }
+  .article-verview {
+    text-indent: 2em;
+  }
+  .article-mate{
+    color: #757575;
+  }
 }

@@ -29,7 +29,7 @@ var paths = {
                 images:'src/img/**/*'
             },
         }
-        
+
 gulp.task('clean', function(cb) {
 
 });
@@ -37,7 +37,7 @@ gulp.task('clean', function(cb) {
 gulp.task('connect', function () {
     connect.server({
         root: '',
-        port:'5060',
+        port:'5050',
         livereload: true
     });
 });
@@ -56,7 +56,7 @@ gulp.task('compass', function() {
       project:__dirname,
       import_path:['bower_components/breakpoint-sass/stylesheets/','bower_components/susy/sass'],
       requre:['breakpoint','susy'],
-      sourcemap: true
+      sourcemap: false
     }))
     .on('error', function(error) {
       console.log(error);

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>首页</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/view.css">
+</head>
+<body>
+<div class="container" id="container">
+  <header class="main-header">
+      <div class="con">
+        <a class="logo">
+          马克
+        </a>
+        <div class="info">
+         与故人重来，作天真少年
+        </div>
+      </div>
+  </header>
+
+  <div class="content" id="content">
+    <aside class="sidebar">
+      <ul>
+        <li>
+           <a href="#">关于我</a>
+        </li>
+        <li>
+           <a href="#"><a href="http://twitter.com/wuhuihao">@wuhuihao</a></a>
+        </li>
+      </ul>
+    </aside>
+    <div class="main">
+      <article class="article">
+        <header>
+          <h1 class="article-title"><a href="">在Github上使用Jekyll建立博客站点</a></h1>
+          <p class="article-mate">
+            2015年7月28日
+          </p>
+        </header>
+        <div class="article-content">
+          <blockquote>
+            <p>翻阅多篇网络日志，花费一晚上的时间完成个人站点的建设，虽很简陋，却也是百废待兴，待我慢慢完善，现将经验分享如下。</p>
+          </blockquote>
+
+          <h3 id="section">域名申请</h3>
+
+          <p>登陆万网使用支付宝购买所需要的域名即可，本来想买.me的域名，但考虑价格因素还是购买了更为便宜的.com域名。</p>
+
+          <h3 id="github">Github建立个人主页</h3>
+
+          <ul>
+            <li>
+              <p>建立Github账户，新建仓库（New repository），仓库名称需采用yourname.github.io格式，将yourname替换为自己项目的名称。</p>
+            </li>
+            <li>
+              <p>跳转到仓库设置(Settings)页面，在GitHub Pages框中点击Launch automatic page generatro按钮生成基础模板页面。</p>
+            </li>
+            <li>
+              <p>根据指引进行站点信息设置，选择个性模板，完成静态页面生成，访问yourname.github.io</p>
+            </li>
+          </ul>
+
+          <h3 id="git-windows">Git 本地安装（windows环境）</h3>
+          <ul>
+            <li>安装<a href="https://git-scm.com/">Git</a>和<a href="http://sourceforge.net/projects/gitextensions/">Git Extensions</a>。</li>
+            <li>选定一个文件目录，右击选择GitExt Clone，填入主页仓库的clone URL，将静态页面克隆到本地。</li>
+          </ul>
+
+          <h3 id="jekyllwindowsrubypython">安装Jekyll(windows环境，需要安装ruby，python)环境</h3>
+          <ul>
+            <li>
+              <p>安装<a href="https://www.ruby-lang.org/en/">Ruby 和 Ruby Development Kit</a>,并且运行以下命令。</p>
+
+              <pre><code>ruby dk.rb init
+          ruby dk.rb install
+          </code></pre>
+            </li>
+            <li>
+              <p>运行一下命令安装Jeklly</p>
+
+              <pre><code>gem install jekyll
+          </code></pre>
+            </li>
+            <li>
+              <p>安装<a href="https://www.python.org/">Python</a>,</p>
+            </li>
+            <li>
+              <p>安装easy_install，从https://pypi.python.org/pypi/setuptools#windows 处下载 distribute_setup.py 文件，并通过以下命令运行该脚本文件。命令执行完毕后，将Python目录下的Scripts添加到系统环境中。</p>
+
+              <pre><code>  python distribute_setup.py
+          </code></pre>
+            </li>
+            <li>
+              <p>通过运行下面的命令安装Pygments</p>
+
+              <pre><code>easy_install Pygments
+          </code></pre>
+            </li>
+            <li>
+              <p>删除上一步中克隆到本地的仓库中的所有文件（如果想要使用自动生成的模板文件，可以将这些文件进行备份），运行如下命令新建Jekyll项目</p>
+
+              <pre><code>jekyll new myblog
+          </code></pre>
+            </li>
+            <li>
+              <p>运行Jekyll,并通过http://localhost:4000 地址预览新生成的博客。</p>
+
+              <pre><code>cd myblog
+          jekyll serve
+          </code></pre>
+            </li>
+          </ul>
+
+          <h3 id="jkyllgithub">推送Jkyll博客至Github</h3>
+
+          <ul>
+            <li>在仓库右击选择打开GitExt Browser,提交修改的文件，并推送到Github远程仓库中，Github将会自动生成博客静态页面，通过yourname.github.io地址访问。</li>
+          </ul>
+
+          <h3 id="yournamegithubio">解析域名至yourname.github.io</h3>
+
+          <ul>
+            <li>
+              <p>注册<a href="https://www.dnspod.cn/">DNSpod</a>服务。<a href="https://support.dnspod.cn/Kb/showarticle/tsid/177/">点击查看教程</a></p>
+            </li>
+            <li>
+              <p>在购买域名的注册商处添加DNSPod的2个DNS短地址</p>
+
+              <pre><code>f1g1ns1.dnspod.net
+          f1g1ns2.dnspod.net
+          </code></pre>
+            </li>
+            <li>
+              <p>博客仓库根目录下新建CNAME文件（不带后缀）,文件内只需填写你所购买的域名www.youname.com,推送到Github上完成域名解析。</p>
+            </li>
+          </ul>
+
+          <h2 id="section-1">参考网址</h2>
+
+          <p>http://www.cellier.me/2015/01/04/jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/</p>
+
+          <p>http://justcoding.iteye.com/blog/1959737</p>
+
+          <p>http://blog.csdn.net/u012844814/article/details/28869997</p>
+
+          <p>http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+</body>
+</html>

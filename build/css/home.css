@@ -1,24 +1,25 @@
-.w-block {
-  width: 100px;
-  height: 100px;
-  background-color: #FFF;
-  margin: 10px;
+.content .sidebar {
+  width: 20%;
   float: left;
 }
-.w-block:after {
-  clear: both;
-  content: "";
+.content .sidebar ul {
+  list-style: none;
+}
+.content .sidebar ul li a {
+  color: #64B5F6;
+}
+.content .sidebar ul li a:hover {
+  color: #90CAF9;
+}
+.content .main {
+  width: 70%;
+  float: left;
 }
 
-.desktop {
-  width: 100%;
-  height: 100%;
-  background-color: #000;
+.article {
+  padding: 10px;
+  margin-bottom: 15px;
 }
-.desktop:after {
-  content: "";
-  clear: both;
-}
-.desktop:before {
-  clear: both;
+.article .article-verview {
+  text-indent: 2em;
 }
